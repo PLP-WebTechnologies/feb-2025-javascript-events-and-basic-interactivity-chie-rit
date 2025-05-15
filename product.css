@@ -1,0 +1,108 @@
+.slider-container {
+	position: relative;
+	width: 100%;
+	max-width: 40rem;
+}
+
+.image-container img {
+	width: 80%;
+    margin: 0 auto;
+	display: none;
+}
+
+.slider-container .prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 1rem;
+	color: #3c3c3c;
+	font-weight: bold;
+	font-size: 1.5rem;
+	transition: 0.3s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #1a1a1a;
+}
+
+.product-container {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.product-body {
+	width: 100%;
+	max-width: 25rem;
+}
+
+.product-body .header p {
+	font-weight: 700;
+}
+
+.product-body h2 {
+	font-size: 2.5rem;
+	margin-bottom: 8px;
+}
+
+.product-body .body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.product-body h3 {
+	font-size: 1.5rem;
+	margin-bottom: 6px;
+}
+
+.product-body h5 {
+	font-size: 1rem;
+	margin-bottom: 4px;
+}
+
+.product-body .footer p {
+	line-height: 1.4rem;
+	margin: 12px 0;
+}
+
+.cart-button {
+	all: unset;
+	padding: 0.75rem 1.25rem;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	margin: 20px auto;
+	background-color: #1a1a1a;
+	color: white;
+	cursor: pointer;
+}
+
+.cart-button:hover {
+	background-color: #3c3c3c;
+}
+
+.fade-in {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0.6}
+  to {opacity: 1}
+}

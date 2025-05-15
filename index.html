@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="product.css" />
+		<title>Shipping</title>
+	</head>
+	<body>
+		<!-- Product section -->
+		<section id="product">
+			<div class="product-container">
+				<div class="slider-container">
+					<div class="image-container fade-in">
+						<img
+							class="slider-image"
+							src="https://images.pexels.com/photos/94843/pexels-photo-94843.jpeg?auto=compress&cs=tinysrgb&w=600"
+						/>
+						<img
+							class="slider-image fade-in"
+							src="https://images.pexels.com/photos/1453008/pexels-photo-1453008.jpeg?auto=compress&cs=tinysrgb&w=600"
+						/>
+						<img
+							class="slider-image fade-in"
+							src="https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=600"
+						/>
+					</div>
+
+					<a class="prev" onclick="changeSlide(1)">&#10094;</a>
+					<a class="next" onclick="changeSlide(-1)">&#10095;</a>
+				</div>
+				<div class="product-body">
+					<div class="header">
+						<h2>Gold Necklace</h2>
+						<p>Jewelry</p>
+					</div>
+					<div class="body">
+						<h3>KSH 200</h3>
+						<div>
+							<img
+								src="https://img.icons8.com/color/24/filled-star--v1.png"
+								alt=""
+							/>
+							<img
+								src="https://img.icons8.com/color/24/filled-star--v1.png"
+								alt=""
+							/>
+							<img
+								src="https://img.icons8.com/color/24/filled-star--v1.png"
+								alt=""
+							/>
+							<img
+								src="https://img.icons8.com/color/24/filled-star--v1.png"
+								alt=""
+							/>
+							<img
+								src="https://img.icons8.com/color/24/filled-star--v1.png"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div class="footer">
+						<h5>Description</h5>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+							ipsam iure totam soluta animi praesentium ipsa consectetur dicta
+							enim fuga ad, at recusandae corrupti quia, rerum deserunt sint
+							nostrum impedit?
+						</p>
+						<button class="cart-button">Add to Cart</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- shipping section -->
+		<div>
+			<div class="form-container">
+				<h3>How would you like to get your order</h3>
+				<form id="shippingForm">
+					<div>
+						<label for="firstName">
+							First name
+							<input
+								type="text"
+								name="firstName"
+								id="firstName"
+								placeholder="John"
+								required
+							/>
+						</label>
+						<label for="lastName">
+							Last name
+							<input
+								type="text"
+								name="lastName"
+								id="lastName"
+								placeholder="Doe"
+								required
+							/>
+						</label>
+					</div>
+					<label for="address">
+						Address
+						<input
+							type="text"
+							name="address"
+							id="address"
+							placeholder="Moi Avenue"
+						/>
+					</label>
+					<div>
+						<label for="city">
+							Town/City
+							<input
+								type="text"
+								name="city"
+								id="city"
+								placeholder="Moi Avenue"
+							/>
+						</label>
+						<label for="county">
+							County
+							<input
+								type="text"
+								name="county"
+								id="county"
+								placeholder="Moi Avenue"
+							/>
+						</label>
+					</div>
+					<label for="email">
+						Email Address
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="johndoe@email.com"
+						/>
+					</label>
+					<input type="submit" value="save" />
+				</form>
+			</div>
+			<div id="receipt">
+				<h3>Shipping Details</h3>
+				<p class="receipt-line" id="rName"></p>
+				<p class="receipt-line" id="rAddress"></p>
+				<p class="receipt-line" id="rCity"></p>
+				<p class="receipt-line" id="rContact"></p>
+				<div class="footer">
+					<p>Price: ksh 200</p>
+					<button class="cart-button">Go to payments</button>
+				</div>
+			</div>
+
+			<div class="form-container">
+				<h2>Login</h2>
+				<form id="loginForm" novalidate>
+					<div class="input-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="you@example.com" />
+						<div class="error" id="emailError"></div>
+					</div>
+
+					<div class="input-group">
+						<label for="password">Password</label>
+						<input
+							type="password"
+							id="password"
+							placeholder="Minimum 8 characters"
+						/>
+						<div class="error" id="passwordError"></div>
+					</div>
+
+					<input type="submit" value="login">
+				</form>
+			</div>
+
+			<script src="script.js"></script>
+		</div>
+	</body>
+</html>
